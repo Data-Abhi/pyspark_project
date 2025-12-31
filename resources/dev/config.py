@@ -25,9 +25,7 @@ properties = {
     "driver": "com.mysql.cj.jdbc.Driver"
 }
 
-#Snowflake database connection properties
 # Snowflake database connection properties
-
 sf_account = "HVZKFGD-XJB52116"     # account locator
 sf_user = "ABHI8572"
 sf_password = "Abhi@9934Singh"
