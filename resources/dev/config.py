@@ -35,7 +35,6 @@ sf_database = "DE_PROJECT"
 sf_schema = "RAW"
 sf_warehouse = "COMPUTE_WH"
 sf_role = "ACCOUNTADMIN"
-
 sf_url = "HVZKFGD-XJB52116.snowflakecomputing.com"
 
 

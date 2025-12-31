@@ -1,1 +1,7 @@
+pycryptodomex
+pycryptodome
+loguru
+boto3
 pyspark==3.5.7
+findspark
+mysql-connector-python
