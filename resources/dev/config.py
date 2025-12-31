@@ -5,9 +5,9 @@ iv = "youtube_encyptyo"
 salt = "youtube_AesEncryption"
 
 #AWS Access And Secret key
-aws_access_key = "your_encrypted_access_key"
-aws_secret_key = "your_encrypted_secret_key"
-bucket_name = "youtube-project-testing"
+aws_access_key = "AKIA44X6UQTTO4PV2XGC"
+aws_secret_key = "jM4L5SEKwcYnnKTMoKxCsxvIQqIEowX4GYWO7uPe"
+bucket_name = "youtube-project-testing-abhi-pyspark"
 s3_customer_datamart_directory = "customer_data_mart"
 s3_sales_datamart_directory = "sales_data_mart"
 s3_source_directory = "sales_data/"
@@ -25,6 +25,21 @@ properties = {
     "driver": "com.mysql.cj.jdbc.Driver"
 }
 
+#Snowflake database connection properties
+# Snowflake database connection properties
+
+sf_account = "HVZKFGD-XJB52116"     # account locator
+sf_user = "ABHI8572"
+sf_password = "Abhi@9934Singh"
+sf_database = "DE_PROJECT"
+sf_schema = "RAW"
+sf_warehouse = "COMPUTE_WH"
+sf_role = "ACCOUNTADMIN"
+
+sf_url = "HVZKFGD-XJB52116.snowflakecomputing.com"
+
+
+
 # Table name
 customer_table_name = "customer"
 product_staging_table = "product_staging_table"
@@ -41,8 +56,8 @@ mandatory_columns = ["customer_id","store_id","product_name","sales_date","sales
 
 
 # File Download location
-local_directory = "C:\\Users\\nikita\\Documents\\data_engineering\\spark_data\\file_from_s3\\"
-customer_data_mart_local_file = "C:\\Users\\nikita\\Documents\\data_engineering\\spark_data\\customer_data_mart\\"
-sales_team_data_mart_local_file = "C:\\Users\\nikita\\Documents\\data_engineering\\spark_data\\sales_team_data_mart\\"
-sales_team_data_mart_partitioned_local_file = "C:\\Users\\nikita\\Documents\\data_engineering\\spark_data\\sales_partition_data\\"
-error_folder_path_local = "C:\\Users\\nikita\\Documents\\data_engineering\\spark_data\\error_files\\"
+local_directory = "C:\\Users\\abhis\\OneDrive\\Desktop\\Pyspark Project\\downloaded_files\\file_from_s3\\"
+customer_data_mart_local_file = "C:\\Users\\abhis\\OneDrive\\Desktop\\Pyspark Project\\downloaded_files\\customer_data_mart\\"
+sales_team_data_mart_local_file = "C:\\Users\\abhis\\OneDrive\\Desktop\\Pyspark Project\\downloaded_files\\sales_team_data_mart\\"
+sales_team_data_mart_partitioned_local_file = "C:\\Users\\abhis\\OneDrive\\Desktop\\Pyspark Project\\downloaded_files\\sales_partition_data\\"
+error_folder_path_local = "C:\\Users\\abhis\\OneDrive\\Desktop\\Pyspark Project\\downloaded_files\\error_files\\"
