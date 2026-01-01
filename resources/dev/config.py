@@ -5,8 +5,8 @@ iv = "youtube_encyptyo"
 salt = "youtube_AesEncryption"
 
 #AWS Access And Secret key
-aws_access_key = "AKIA44X6UQTTO4PV2XGC"
-aws_secret_key = "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"
+aws_access_key = os.getenv("AWS_ACCESS_KEY")
+aws_secret_key = os.getenv("AWS_SECRET_KEY")
 bucket_name = "youtube-project-testing-abhi-pyspark"
 s3_customer_datamart_directory = "customer_data_mart"
 s3_sales_datamart_directory = "sales_data_mart"
@@ -26,14 +26,14 @@ properties = {
 }
 
 # Snowflake database connection properties
-sf_account = "HVZKFGD-XJB52116"     # account locator
-sf_user = "ABHI8572"
-sf_password = "Abhi@9934Singh"
+sf_account = os.getenv("SNOWFLAKE_ACCOUNT")     # account locator
+sf_user = os.getenv("SNOWFLAKE_USER")
+sf_password = os.getenv("SNOWFLAKE_PASSWORD")
 sf_database = "DE_PROJECT"
 sf_schema = "RAW"
 sf_warehouse = "COMPUTE_WH"
 sf_role = "ACCOUNTADMIN"
-sf_url = "HVZKFGD-XJB52116.snowflakecomputing.com"
+sf_url = os.getenv("SNOWFLAKE_URL")
 
 
 
