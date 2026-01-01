@@ -1,11 +1,12 @@
-CREATE TABLE product_staging_table (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    file_name VARCHAR(255),
-    file_location VARCHAR(255),
-    created_date TIMESTAMP ,
-    updated_date TIMESTAMP ,
-    status VARCHAR(1)
+CREATE OR REPLACE TABLE product_staging_table (
+    id NUMBER(38,0) AUTOINCREMENT START 1 INCREMENT 1,
+    file_name STRING,
+    file_location STRING,
+    created_date TIMESTAMP_NTZ,
+    updated_date TIMESTAMP_NTZ,
+    status STRING(1)
 );
+
 
 
 CREATE TABLE customer (

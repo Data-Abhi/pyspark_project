@@ -21,3 +21,4 @@ Thumbs.db
 
 # Spark temp
 spark-warehouse/
+.snowflake/
